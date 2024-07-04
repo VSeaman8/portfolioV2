@@ -1,5 +1,91 @@
+.hero {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url("../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+.hero h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.hero h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.mySkillsContainer {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "profile skills";
+  grid-template-columns: 1fr 2fr;
+  background-color: white;
+}
+
+.mySkillsContainer h3 {
+  grid-area: title;
+}
+
+.profileAndSkills {
+  display: contents;
+}
+
+.profile {
+  grid-area: profile;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 60px;
+}
+
+.techskills {
+  grid-area: skills;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Adjust minmax values as needed */
+  gap: 10px; /* Adjust as needed */
+}
+
+.techskills ol {
+  padding: 0;
+  list-style-type: none; /* Removes default list numbering */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(max-content, 1fr)
+  ); /* Adjust for content-based sizing */
+  gap: 10px; /* Adjust as needed */
+}
+
+.techskills li {
+  background: #f0f0f0; /* Example styling */
+  padding: 5px 10px; /* Adjust padding as needed */
+  margin: 5px; /* Adds some space between items */
+}
+
+/* old portfolio css */
 body {
   font-family: "Poppins", sans-serif;
+  background: #121e27;
 }
 
 .container {
@@ -83,38 +169,6 @@ section {
 }
 section.secondary {
   background: #f8f8f8;
-}
-.hero {
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-    url("../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 200px 0;
-}
-
-.hero h1 {
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 1;
-  margin: 30px 0;
-}
-
-.hero h2 {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.hero h3 {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  margin: 0;
 }
 
 .homepageBtn {

@@ -17,19 +17,21 @@ const Homepage = () => {
       </div>
       <div className="mySkillsContainer">
         <h3>My Skills</h3>
-        <img src="" alt="my picture" />
+        <img src={profilePic} alt="my picture" className="profile" />
         <div className="techskills">
-          <ol> React </ol>
-          <ol>JavaScrip</ol>
-          <ol>Express</ol>
-          <ol>HTML 5</ol>
-          <ol>Mocha</ol>
-          <ol>Git</ol>
-          <ol>Node.js</ol>
-          <ol>Jest</ol>
-          <ol>CSS</ol>
-          <ol>MongoDB</ol>
-          <ol>Scrum</ol>
+          <ol>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>Express</li>
+            <li>HTML 5</li>
+            <li>Mocha</li>
+            <li>Git</li>
+            <li>Node.js</li>
+            <li>Jest</li>
+            <li>CSS</li>
+            <li>MongoDB</li>
+            <li>Scrum</li>
+          </ol>
         </div>
         <div className="projectSummaries">
           <h2>Projects</h2>
