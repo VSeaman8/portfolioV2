@@ -10,6 +10,7 @@ export default defineConfig({
     testMatch: ["./tests/**/*.test.jsx$?"],
     globals: true,
     coverage: {
+      provider: "istanbul",
       reporter: ["text", "json", "html"],
     },
   },
