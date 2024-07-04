@@ -14,7 +14,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         {/*<Route path="aboutMe" element={<AboutMe />} />*/}
-        <Route path="projects" element={<Projects />} />
         <Route path="about" element={<About />} />
       </Routes>
       <Footer />
