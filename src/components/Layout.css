@@ -1,0 +1,11 @@
+/* Navbar CSS */
+
+.navBarContainer {
+  background-color: #121e27;
+}
+
+/* changes colour of navbar text */
+.navBarContainer .navbar-brand,
+.navBarContainer .nav-link {
+  color: #66ffe0 !important;
+}
