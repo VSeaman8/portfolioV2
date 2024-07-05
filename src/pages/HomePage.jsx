@@ -1,3 +1,5 @@
+import ProjectSummaries from "../components/ProjectSummaries.jsx";
+
 import "./HomePage.css";
 import profilePic from "../assets/images/victoriaSeamanProfile.jpg";
 
@@ -16,7 +18,7 @@ const Homepage = () => {
         </p>
       </div>
       <div className="mySkillsContainer">
-        <h3>My Skills</h3>
+        <h2>My Skills</h2>
         <img src={profilePic} alt="my picture" className="profile" />
         <div className="techskills">
           <ol>
@@ -33,19 +35,20 @@ const Homepage = () => {
             <li>Scrum</li>
           </ol>
         </div>
-        <div className="projectSummaries">
-          <h2>Projects</h2>
-          <div className="project">
-            <h3>STACK</h3>
-            <h3>Title</h3>
-            <div className="stackList">
-              <ol></ol>
-            </div>
-            <p>Summary here</p>
-            <img src="" alt="website screenshot" />
-            <button>View Project</button>
-          </div>
+        <div className="bio">
+          <h3>The Quick me</h3>
+          <p>
+            I have always loved technology and feel almost a sense of awe in
+            what we have create. Working within the library service over the
+            last 15 years has shown me the joy of bringing a world to a
+            technological stand
+          </p>
+          <div className="biolink">Keep reading my bio</div>
         </div>
+      </div>
+      <div className="projects">
+        <h2 className="projectsTitle">Projects</h2>
+        <ProjectSummaries />
       </div>
       <div className="contactContainer">
         <h3>Let's have a chat</h3>
