@@ -11,6 +11,12 @@ body {
   align-items: center;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  padding: 0px, 50px;
+}
+
 .container {
   background-color: white;
   width: 100%;
@@ -20,14 +26,19 @@ body {
 }
 
 .hero {
+  width: 100vw;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../assets/images/jj-ying-8bghKxNU1j0-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 200px 0;
+  padding: 200px 50px;
 }
 
 .hero h1,
@@ -79,20 +90,27 @@ body {
   border-radius: 50px;
 }
 
+.techskills {
+  grid-area: skills;
+}
+
 .techskills,
 .techskills ol {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   padding: 0;
   list-style-type: none;
+  row-gap: 0;
 }
 
 .techskills li {
   background: #121e27;
   padding: 5px 10px;
-  margin: 5px;
+  margin: 2px;
   color: aliceblue;
+  height: 30px;
+  line-height: 1;
 }
 
 .bio {

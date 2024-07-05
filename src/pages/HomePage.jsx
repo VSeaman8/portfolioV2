@@ -5,7 +5,7 @@ import profilePic from "../assets/images/victoriaSeamanProfile.jpg";
 
 const Homepage = () => {
   return (
-    <div className="container">
+    <>
       <div className="hero">
         <h1>Hi, I'm Vicki | Software Engineer</h1>
         <div className="socialLinks">
@@ -17,43 +17,45 @@ const Homepage = () => {
           I may have enough books that I can call it a library)
         </p>
       </div>
-      <div className="mySkillsContainer">
-        <h2>My Skills</h2>
-        <img src={profilePic} alt="my picture" className="profile" />
-        <div className="techskills">
-          <ol>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>Express</li>
-            <li>HTML 5</li>
-            <li>Mocha</li>
-            <li>Git</li>
-            <li>Node.js</li>
-            <li>Jest</li>
-            <li>CSS</li>
-            <li>MongoDB</li>
-            <li>Scrum</li>
-          </ol>
+      <div className="container">
+        <div className="mySkillsContainer">
+          <h2>My Skills</h2>
+          <img src={profilePic} alt="my picture" className="profile" />
+          <div className="techskills">
+            <ol>
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>Express</li>
+              <li>HTML 5</li>
+              <li>Mocha</li>
+              <li>Git</li>
+              <li>Node.js</li>
+              <li>Jest</li>
+              <li>CSS</li>
+              <li>MongoDB</li>
+              <li>Scrum</li>
+            </ol>
+          </div>
+          <div className="bio">
+            <h3>The Quick me</h3>
+            <p>
+              I have always loved technology and feel almost a sense of awe in
+              what we have create. Working within the library service over the
+              last 15 years has shown me the joy of bringing a world to a
+              technological stand
+            </p>
+            <div className="biolink">Keep reading my bio</div>
+          </div>
         </div>
-        <div className="bio">
-          <h3>The Quick me</h3>
-          <p>
-            I have always loved technology and feel almost a sense of awe in
-            what we have create. Working within the library service over the
-            last 15 years has shown me the joy of bringing a world to a
-            technological stand
-          </p>
-          <div className="biolink">Keep reading my bio</div>
+        <div className="projects">
+          <h2 className="projectsTitle">Projects</h2>
+          <ProjectSummaries />
+        </div>
+        <div className="contactContainer">
+          <h3>Let's have a chat</h3>
         </div>
       </div>
-      <div className="projects">
-        <h2 className="projectsTitle">Projects</h2>
-        <ProjectSummaries />
-      </div>
-      <div className="contactContainer">
-        <h3>Let's have a chat</h3>
-      </div>
-    </div>
+    </>
   );
 };
 
