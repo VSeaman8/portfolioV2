@@ -27,6 +27,23 @@ h2 {
 
 .titleh2 {
   padding-left: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.titleh2 span {
+  position: relative;
+  display: inline-block; /* Ensures the span's width matches its content */
+}
+.titleh2 span::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 50%;
+  background-color: #66ffe0;
+  z-index: -1;
+  top: 60%;
+  left: 10%;
 }
 
 .hero {
@@ -81,6 +98,8 @@ h2 {
 
 .mySkillsContainer h2 {
   grid-area: title;
+  position: relative;
+  z-index: 1;
 }
 
 .skillsTitle {

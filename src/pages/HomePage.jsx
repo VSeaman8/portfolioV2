@@ -19,7 +19,9 @@ const Homepage = () => {
       </div>
       <div className="container">
         <div className="mySkillsContainer">
-          <h2 className="skillsTitle titleh2">My Skills</h2>
+          <h2 className="skillsTitle titleh2">
+            My <span>Skills</span>
+          </h2>
           <img src={profilePic} alt="my picture" className="profile" />
           <div className="techskills">
             <ol>
@@ -48,7 +50,9 @@ const Homepage = () => {
           </div>
         </div>
         <div className="projects">
-          <h2 className="projectsTitle titleh2">Projects</h2>
+          <h2 className="projectsTitle titleh2">
+            <span>Projects</span>
+          </h2>
           <ProjectSummaries />
         </div>
         <div className="contactContainer">
