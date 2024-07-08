@@ -1,28 +1,30 @@
 .projectSummaries {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(300px, 1fr)
-  ); /* Adjust based on your preference */
-  gap: 20px; /* Space between projects */
   background-color: white;
   padding: 20px;
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers the child elements horizontally */
+  max-width: 1400px; /* Adjust based on your design preference */
+  margin: auto; /* Centers the container in the middle of the page */
 }
 
 .project {
   display: grid;
+  grid-template-columns: 400px 400px;
   grid-template-areas:
     "h3 image"
     "title image"
     "stackList image"
     "summary image"
     "button image";
-  gap: 10px; /* Space between grid items */
+  gap: 10px;
+  column-gap: 100px;
+  align-items: start;
+  justify-items: stretch;
 }
 
-.project .project h2 {
-  grid-area: h2;
-  font-weight: 700;
+.project h2 {
+  grid-area: title;
+  font-weight: 900px;
   font-size: 40px;
   line-height: 1.5;
   color: #1a3838;
@@ -43,21 +45,23 @@
 
 .project .stackList {
   grid-area: stackList;
-  /* Additional styles if needed */
 }
 
 .project p {
   grid-area: summary;
-  /* Additional styles if needed */
 }
 
 .project img {
   grid-area: image;
-  width: 600px;
-  /* Your existing styles */
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 35px;
 }
 
 .project button {
   grid-area: button;
-  /* Additional styles if needed */
+  width: auto;
+  max-width: fit-content;
+  padding: 10px 20px;
+  justify-self: left;
 }
