@@ -20,7 +20,7 @@ h2 {
 .container {
   background-color: white;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto; /* Center the container */
   padding: 0;
 }
@@ -40,13 +40,33 @@ h2 {
   position: absolute;
   width: 110%;
   height: 50%;
-  background-color: #66ffe0;
+  background-color: #66ffe0 !important;
   z-index: -1;
   top: 60%;
   left: 10%;
 }
-
+/* Hero with the colourful door*/
 .hero {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-image: linear-gradient(
+      rgba(18, 30, 39, 0.4),
+      rgba(18, 30, 39, 0.6)
+    ),
+    url("../assets/images/efe-kurnaz-RnCPiXixooY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 50px;
+}
+
+/* Hero with the cables */
+/* .hero {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -60,7 +80,7 @@ h2 {
   color: white;
   text-align: center;
   padding: 200px 50px;
-}
+} */
 
 .hero h1,
 .hero h2,
@@ -157,13 +177,13 @@ h2 {
 .img-responsive {
   display: block;
   width: 100%;
-  height: auto; /* Adjusted for better responsiveness */
+  height: auto;
 }
 
 .mySkillsContainer,
 .projects,
 .contactContainer {
-  margin-bottom: 30px; /* Adjust as needed for desired spacing */
+  margin-bottom: 30px;
 }
 
 /*.grid {
