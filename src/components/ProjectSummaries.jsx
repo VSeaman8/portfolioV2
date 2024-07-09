@@ -6,12 +6,15 @@ const ProjectSummaries = () => {
     <>
       <div className="projectSummaries">
         <div className="project">
-          <h3>STACK</h3>
+          <h3>Full Stack</h3>
           <h2>Travel Website</h2>
           <div className="stackList techskills">
             <ol>
               <li>React</li>
-              <li>extress</li>
+              <li>express</li>
+              <li>CSS</li>
+              <li>html</li>
+              <li>MongoDB</li>
             </ol>
           </div>
           <p className="summary">
@@ -25,12 +28,15 @@ const ProjectSummaries = () => {
       </div>
       <div className="projectSummaries">
         <div className="project">
-          <h3>STACK</h3>
+          <h3>Full Stack</h3>
           <h2>Travel Website</h2>
           <div className="stackList techskills">
             <ol>
               <li>React</li>
-              <li>extress</li>
+              <li>express</li>
+              <li>CSS</li>
+              <li>html</li>
+              <li>MongoDB</li>
             </ol>
           </div>
           <p className="summary">

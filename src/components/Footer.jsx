@@ -1,9 +1,5 @@
 import { Link } from "react-router-dom";
 
-import About from "../pages/About.jsx";
-import Archive from "../pages/Archive.jsx";
-import FunStuff from "../pages/FunStuff.jsx";
-
 const Footer = () => {
   return (
     <footer className="footerContainer">

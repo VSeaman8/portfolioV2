@@ -46,7 +46,7 @@ h2 {
   left: 10%;
 }
 /* Hero with the colourful door*/
-.hero {
+/* .hero {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -63,10 +63,10 @@ h2 {
   color: white;
   text-align: center;
   padding: 200px 50px;
-}
+} */
 
 /* Hero with the cables */
-/* .hero {
+.hero {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -80,7 +80,7 @@ h2 {
   color: white;
   text-align: center;
   padding: 200px 50px;
-} */
+}
 
 .hero h1,
 .hero h2,
@@ -134,6 +134,7 @@ h2 {
   grid-area: profile;
   max-width: 600px;
   padding: 0 60px;
+  border-radius: 30px;
 }
 
 .profile img {
@@ -168,6 +169,17 @@ h2 {
 
 .bio {
   grid-area: bio;
+}
+
+.biolink {
+  font-weight: 900px !important;
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: #008b7a !important;
+}
+
+.biotitle {
+  margin-bottom: 30px;
 }
 
 .text-center {

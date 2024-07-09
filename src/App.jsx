@@ -13,7 +13,6 @@ function App() {
       <Layout>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          {/*<Route path="aboutMe" element={<AboutMe />} />*/}
           <Route path="about" element={<About />} />
           <Route path="/archive" element={<Archive />} />
           <Route path="/funstuff" element={<FunStuff />} />
