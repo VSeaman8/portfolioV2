@@ -22,10 +22,18 @@ h3 {
   margin: 0; /* Reset margin for h3 specifically */
 }
 
+p {
+  margin-top: 20px;
+}
+
 .aboutContainer {
   background-color: white !important;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto; /* Center the container */
-  padding: 0;
+  padding: 30px;
+}
+
+.cvDiv {
+  margin-bottom: 30px;
 }

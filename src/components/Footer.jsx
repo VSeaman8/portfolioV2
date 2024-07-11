@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
     <footer className="footerContainer">
       <p className="name">Victoria Seaman</p>
-      <div className="socials">socials</div>
+      <div className="socials">
+        <FontAwesomeIcon icon={faGithub} style={{ color: "#74C0FC" }} />
+        <FontAwesomeIcon icon={faLinkedin} style={{ color: "#63E6BE" }} />
+        <FontAwesomeIcon icon={faEnvelope} style={{ color: "#63E6BE" }} />
+      </div>
       <div className="linksList">
         <ol>
           <li>
