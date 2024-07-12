@@ -3,7 +3,7 @@ import example from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
 
 const ProjectSummaries = () => {
   return (
-    <>
+    <div className="projectContainer">
       {/* Project 1 */}
       <div className="projectSummaries">
         <div className="project">
@@ -111,7 +111,7 @@ const ProjectSummaries = () => {
           <button>View Project</button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default ProjectSummaries;

@@ -1,10 +1,13 @@
-.projectSummaries {
+.projectContainer {
   background-color: white;
+}
+
+.projectSummaries {
   padding: 20px;
-  display: flex; /* Enables flexbox layout */
-  justify-content: center; /* Centers the child elements horizontally */
-  max-width: 1400px; /* Adjust based on your design preference */
-  margin: auto; /* Centers the container in the middle of the page */
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .project {
@@ -24,7 +27,7 @@
 
 .project h2 {
   grid-area: title;
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 40px;
   line-height: 1.5;
   color: #1a3838;
@@ -37,10 +40,10 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 5px;
-  opacity: 0.3;
+  opacity: 0.6;
   text-transform: uppercase;
   margin: 0;
-  color: #121e27;
+  color: #008b7a;
 }
 
 .project .stackList {
@@ -64,4 +67,29 @@
   max-width: fit-content;
   padding: 10px 20px;
   justify-self: left;
+}
+
+.projectsTitle {
+  margin: 30px 0;
+}
+
+.titleh2 {
+  padding-left: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.titleh2 span {
+  position: relative;
+  display: inline-block;
+}
+.titleh2 span::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 50%;
+  background-color: #66ffe0 !important;
+  z-index: -1;
+  top: 60%;
+  left: 10%;
 }

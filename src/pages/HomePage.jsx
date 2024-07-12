@@ -19,9 +19,11 @@ const Homepage = () => {
       <div className="container">
         <SkillsContainer />
         <div className="projects">
-          <h2 className="projectsTitle titleh2">
-            <span>Projects</span>
-          </h2>
+          <div>
+            <h2 className="projectsTitle titleh2">
+              <span>Projects</span>
+            </h2>
+          </div>
           <ProjectSummaries />
         </div>
         <div className="contactContainer titleh2">

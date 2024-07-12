@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
+import "./SkillsContainer.css";
 import profilePic from "../assets/images/victoriaSeamanProfile.jpg";
+import profileExmaple from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
 
 const SkillsContainer = () => {
   return (
@@ -8,7 +10,12 @@ const SkillsContainer = () => {
       <h2 className="skillsTitle titleh2">
         My <span>Skills</span>
       </h2>
-      <img src={profilePic} alt="my picture" className="profile" />
+      <img
+        src={profilePic}
+        alt="my picture"
+        className="profile"
+        style={{ borderRadius: "30px" }}
+      />
       <div className="techskills">
         <ol>
           <li>React</li>
