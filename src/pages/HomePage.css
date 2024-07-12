@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 40px;
   padding: 0px;
 }
@@ -55,7 +55,7 @@ h2 {
   position: absolute;
   width: 110%;
   height: 50%;
-  background-color: #66ffe0 !important;
+  background-color: #008b7a !important;
   z-index: -1;
   top: 60%;
   left: 10%;

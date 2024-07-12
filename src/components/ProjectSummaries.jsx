@@ -1,3 +1,5 @@
+import NavigationButton from "../functions/NavigationButton.jsx";
+
 import "./ProjectSummaries.css";
 import example from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
 
@@ -23,7 +25,7 @@ const ProjectSummaries = () => {
             and randomised.
           </p>
           <img src={example} alt="website screenshot" />
-          <button>View Project</button>
+          <NavigationButton to="/project1"></NavigationButton>
         </div>
         {/* Project 2 */}
       </div>
@@ -49,7 +51,7 @@ const ProjectSummaries = () => {
             local area.
           </p>
           <img src={example} alt="website screenshot" />
-          <button>View Project</button>
+          <NavigationButton to="/project2"></NavigationButton>
         </div>
       </div>
       {/* Project 3 */}
@@ -70,7 +72,7 @@ const ProjectSummaries = () => {
             alkfhjda;lkfhadkl;fhad;flkasdfsaruihyweproieha
           </p>
           <img src={example} alt="website screenshot" />
-          <button>View Project</button>
+          <NavigationButton to="/project3"></NavigationButton>
         </div>
       </div>
       {/* Project 4 */}
@@ -89,7 +91,7 @@ const ProjectSummaries = () => {
           </div>
           <p className="summary"></p>
           <img src={example} alt="website screenshot" />
-          <button>View Project</button>
+          <NavigationButton to="/project4"></NavigationButton>
         </div>
       </div>
       {/* Project 5 */}
@@ -108,7 +110,7 @@ const ProjectSummaries = () => {
           </div>
           <p className="summary"></p>
           <img src={example} alt="website screenshot" />
-          <button>View Project</button>
+          <NavigationButton to="/project5"></NavigationButton>
         </div>
       </div>
     </div>
@@ -134,7 +136,7 @@ export default ProjectSummaries;
             
           </p>
           <img src={example} alt="website screenshot" />
-          <button>View Project</button>
+          <NavigationButton to="/project1"></NavigationButton>
         </div>
       </div>
       */

@@ -1,14 +1,8 @@
-const TravelWebsite = () => {
+const WeatherApp = () => {
   return (
     <div className="projectContainer">
-      <h1>Travel Info Website</h1>
-      <p className="projectSummary">
-        This was my last challenge within the Digital Futures academy and was
-        the biggest Challenge yet. Building on everything I learnt throughout
-        the academy (other than Java!) to create a Travel Info Website using
-        third party APIs. As this was a time restricted challenge not every
-        feature was included.
-      </p>
+      <h1>WeatherApp</h1>
+      <p className="projectSummary"></p>
       <div>
         <div className="type">
           <strong>Type</strong>
@@ -40,20 +34,7 @@ const TravelWebsite = () => {
           The purpose of this project is to develop a web-based travel
           information application for DFCorp, designed to provide users with
           valuable weather and location-based information. This application aims
-          to enhance user experience by integrating a variety of features that
-          can be useful for travellers. The primary goal is to display a 5-day
-          weather forecast for any searchable location, with an additional
-          functionality for users to save their favourite locations locally. The
-          application will be responsive and adaptable to different devices,
-          ensuring accessibility and usability across mobile, tablet, and
-          desktop platforms. The benefits of this software include: - Providing
-          up-to-date weather forecasts for travellers, helping them plan their
-          trips effectively. - Allowing users to save their favourite locations
-          for quick access to weather information. - Offering additional
-          travel-related features, such as a map of the local area and a
-          slideshow of local hotels, which can enhance the overall user
-          experience and potentially increase user engagement with DFCorp's
-          suite of applications.
+          to enhance user experience by integrating a variety of f
         </p>
       </div>
       <div className="webStack">
@@ -115,4 +96,4 @@ const TravelWebsite = () => {
   );
 };
 
-export default TravelWebsite;
+export default WeatherApp;
