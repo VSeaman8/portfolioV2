@@ -29,6 +29,17 @@
 .socials {
   grid-area: social;
 }
+.icons {
+  color: white;
+  font-size: 50px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
 
 .linkslist {
   grid-area: link;

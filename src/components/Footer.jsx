@@ -8,9 +8,21 @@ const Footer = () => {
     <footer className="footerContainer">
       <p className="name">Victoria Seaman</p>
       <div className="socials">
-        <FontAwesomeIcon icon={faGithub} style={{ color: "#74C0FC" }} />
-        <FontAwesomeIcon icon={faLinkedin} style={{ color: "#63E6BE" }} />
-        <FontAwesomeIcon icon={faEnvelope} style={{ color: "#63E6BE" }} />
+        <a
+          href="https://github.com/VSeaman8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} className="icons" />{" "}
+        </a>
+        <a
+          href="https://linkedin.com/in/victoria-seaman"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedin} className="icons" />
+        </a>
+        {/*<FontAwesomeIcon icon={faEnvelope} className="heroIcons" />*/}
       </div>
       <div className="linksList">
         <ol>
