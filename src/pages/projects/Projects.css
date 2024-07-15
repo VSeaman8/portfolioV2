@@ -1,0 +1,57 @@
+.projectContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.projectDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "type stack code live";
+}
+
+.type {
+  grid-area: type;
+  display: flex;
+  flex-direction: column;
+}
+
+.stack {
+  grid-area: stack;
+}
+
+.code {
+  grid-area: code;
+}
+
+.live {
+  grid-area: live;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0;
+  list-style-type: none;
+  row-gap: 0;
+  padding: 0;
+}
+
+li {
+  background: #121e27;
+  padding: 5px 10px;
+  margin: 2px;
+  color: aliceblue;
+  height: 30px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -2,6 +2,7 @@ import NavigationButton from "../functions/NavigationButton.jsx";
 
 import "./ProjectSummaries.css";
 import example from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
+import portrait from "../assets/images/victoriaSeamanProfile.jpg";
 
 const ProjectSummaries = () => {
   return (
@@ -24,7 +25,7 @@ const ProjectSummaries = () => {
             for the user. Involves strict management of data pulled from the API
             and randomised.
           </p>
-          <img src={example} alt="website screenshot" />
+          <img src={portrait} alt="website screenshot" />
           <NavigationButton to="/project1"></NavigationButton>
         </div>
         {/* Project 2 */}
@@ -72,7 +73,7 @@ const ProjectSummaries = () => {
             alkfhjda;lkfhadkl;fhad;flkasdfsaruihyweproieha
           </p>
           <img src={example} alt="website screenshot" />
-          <NavigationButton to="/project3"></NavigationButton>
+          <NavigationButton to="/project4"></NavigationButton>
         </div>
       </div>
       {/* Project 4 */}
@@ -91,7 +92,7 @@ const ProjectSummaries = () => {
           </div>
           <p className="summary"></p>
           <img src={example} alt="website screenshot" />
-          <NavigationButton to="/project4"></NavigationButton>
+          <NavigationButton to="/project3"></NavigationButton>
         </div>
       </div>
       {/* Project 5 */}

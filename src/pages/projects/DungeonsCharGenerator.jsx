@@ -1,12 +1,19 @@
+import "./Projects.css";
+
 const DungeonsCharGenerator = () => {
   return (
     <div className="projectContainer">
       <h1>Dungeons and Dragons Generator</h1>
-      <p className="projectSummary"></p>
-      <div>
+      <p className="projectSummary">
+        This project focuses on developing a straightforward frontend website
+        that integrates a third-party API to generate quick character profiles
+        for users. It emphasizes rigorous management and randomization of data
+        retrieved from the API.
+      </p>
+      <div className="projectDetails">
         <div className="type">
           <strong>Type</strong>
-          Training Project
+          <span>Training Project</span>
         </div>
         <div className="stack">
           <strong>Stack</strong>
@@ -14,13 +21,19 @@ const DungeonsCharGenerator = () => {
             <li>React</li>
             <li>JavaScript</li>
             <li>CSS</li>
-            <li>Postman</li>
-            <li>Express</li>
-            <li>Chai</li>
           </ol>
         </div>
         <div className="code">
           <strong>Code</strong>
+          <div className="code">
+            <a
+              href="https://github.com/VSeaman8/DandDGenerator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Github Repository</span>
+            </a>
+          </div>
         </div>
         <div className="live">
           <strong>Live</strong>
@@ -31,67 +44,50 @@ const DungeonsCharGenerator = () => {
       <div className="purposeContainer">
         <h3>Project Purpose and Goal</h3>
         <p>
-          The purpose of this project is to develop a web-based travel
-          information application for DFCorp, designed to provide users with
-          valuable weather and location-based information. This application aims
-          to enhance user experience by integrating a variety of f
+          The goal of this project is to practice randomising data from an API
+          and to reinforce what I have learned about coding and managing
+          projects.
         </p>
       </div>
       <div className="webStack">
         <h3>Web Stack and Explanation</h3>
         <p>
-          For this project, the prescribed web stack was utilized to ensure
-          consistency and focus on learning. I used React for its
-          component-based architecture and performance benefits, alongside
-          JavaScript to build interactive interfaces. The combination of HTML
-          and CSS ensured a well-structured and responsive design. Express
-          handled server-side operations and API requests, while Chai
-          facilitated comprehensive testing. MongoDB was used for data
-          management, ensuring persistence of user data such as saved favourite
-          locations. This challenge provided valuable hands-on experience with
-          these technologies, enhancing my skills in full-stack web development.
+          For this iteration I am using React I could do this as pure html but I
+          want to future proof this website and add more functionality later
+          especially when there will be an option to save the created character
+          and have a global log in
         </p>
       </div>
       <div className="problemProcess">
         <h3>Problems and Thought Process</h3>
         <p>
-          Working on feedback from my tutor I split the challenge up into
-          slices, with each slice or feature being fully functioning before
-          moving onto the next feature. This also made it easier for me to write
-          user stories to enable the creation of a versitle and robust website.
-          This was also the **first time I was creating the backend to a website
-          and and really wanted to get to grips with how the front and backend
-          integrated with each other**. As I am still new to using APIs the
-          biggest challenge came from them. The hotel API that I was supposed to
-          be using was actually discontinued the morning after I had written the
-          code. This led to alot of confusion my my part at first until after
-          extensive testing with Postman and waiting on my tutor to confirm that
-          I was indeed not mad and that it was discontinued. As this was a time
-          oriented challenge I made the decision to keep the code in place ready
-          for after the challenge when I had time to find a replacement API.
-          Working on feedback from my tutor, I split the challenge into slices,
-          with each slice or feature being fully functional before moving on to
-          the next. This approach also made it easier to write user stories,
-          enabling the creation of a versatile and robust website. This was the
-          first time I created the backend of a website, and I wanted to
-          understand how the front and backend integrated with each other. As I
-          am still new to using APIs, they presented the biggest challenge. The
-          hotel API that I was supposed to use was discontinued the morning
-          after I had written the code. This led to a lot of confusion initially
-          until, after extensive testing with Postman and confirmation from my
-          tutor, I realized it was indeed discontinued. Due to the
-          time-sensitive nature of the challenge, I decided to keep the existing
-          code in place and plan to find a replacement API after the challenge.
+          Initially I have created a business case to work from so that I can
+          practice managing this project. This also enabled me to think about
+          what I want this website to do in the future and had fun planning
+          later iterations of this project. For now in this iteration the
+          website will only create a randomised character. The user will not be
+          able to change any input in this iteration of the website. This is all
+          about making sure that all the pieces of data work together as there
+          is a lot of data to manipulate - about 30-40 individual pieces of
+          data. Having written the business case and created wireframes on Figma
+          I suddenly found that what had seemed simple in concept was actually
+          more complicated in reality both in ensuring that each piece of data
+          was showing correctly and also how to call such a large amount of
+          information from the API and randomise it.
         </p>
       </div>
       <div className="lessonLearnt">
-        <h3>Lessons Learned</h3>
-        <p>My lessons are explained here</p>
+        <h3>Current Status</h3>
+        <p>
+          Most of the static work has been done on the website. Ability scores
+          and modifiers are now randomised. The next task is to work on how to
+          call and randomise data from API
+        </p>
       </div>
-      <div className="furtherWork">
+      {/* <div className="furtherWork">
         <h3>Futher Work</h3>
         <p>Further work explained and conclusion if needed</p>
-      </div>
+      </div> */}
     </div>
   );
 };
