@@ -30,13 +30,13 @@ const Footer = () => {
             <Link to="/about">About</Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link to="/archive">Archive</Link>
           </li>
 
           <li>
             <Link to="/funstuff">Fun Stuff</Link>
-          </li>
+          </li> */}
         </ol>
       </div>
       <div className="photoCredit">

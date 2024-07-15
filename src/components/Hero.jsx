@@ -26,8 +26,8 @@ const Hero = () => {
         {/*<FontAwesomeIcon icon={faEnvelope} className="heroIcons" />*/}
       </div>
       <h2>
-        I love knowledge | I'm a lifelong learner | I may have so many books
-        that I can call them a library
+        I love knowledge | A lifelong learner | I may have so many books that I
+        can call them a library
       </h2>
     </div>
   );

@@ -78,7 +78,7 @@ const ProjectSummaries = () => {
       {/* Project 4 */}
       <div className="projectSummaries">
         <div className="project">
-          <h3>stack</h3>
+          <h3>Frontend</h3>
           <h2>Dictionary</h2>
           <div className="stackList techskills">
             <ol>
@@ -97,8 +97,8 @@ const ProjectSummaries = () => {
       {/* Project 5 */}
       <div className="projectSummaries">
         <div className="project">
-          <h3>stack</h3>
-          <h2>title</h2>
+          <h3>Frontend</h3>
+          <h2>Mini Projects Fun Page</h2>
           <div className="stackList techskills">
             <ol>
               <li>React</li>

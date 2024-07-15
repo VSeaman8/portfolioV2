@@ -2,6 +2,7 @@
 
 .navBarContainer {
   background-color: #121e27;
+  width: 100vw;
 }
 
 /* changes colour of navbar text */
@@ -10,20 +11,26 @@
   color: #ffffff !important;
 }
 
+.navbar-brand {
+  padding-left: 30px;
+}
+
 /* Footer CSS */
 
 .footerContainer {
-  color: #66ffe0;
+  color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "name social link"
     ". photo .";
   gap: 10px;
+  width: 100vw;
 }
 
 .name {
   grid-area: name;
+  padding-left: 30px;
 }
 
 .socials {
@@ -47,6 +54,7 @@
 
 .photoCredit {
   grid-area: photo;
+  justify-content: center;
 }
 
 footer {
@@ -69,7 +77,7 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   line-height: 24px;
 }
 
@@ -84,5 +92,10 @@ footer li {
 }
 footer a {
   color: white;
-  opacity: 0.7;
+  margin-top: 20px;
+  /* opacity: 0.7; */
+}
+
+footer ol {
+  margin-top: 20px;
 }
