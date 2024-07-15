@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
 import NavigationButton from "../functions/NavigationButton.jsx";
 
 import "./ProjectSummaries.css";
 import example from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
 import portrait from "../assets/images/victoriaSeamanProfile.jpg";
+import weather from "../assets/images/weathersearchreact.png";
+import dictionary from "../assets/images/dictionaryv1.png";
 
 const ProjectSummaries = () => {
   return (
@@ -25,7 +28,12 @@ const ProjectSummaries = () => {
             for the user. Involves strict management of data pulled from the API
             and randomised.
           </p>
-          <img src={portrait} alt="website screenshot" />
+          <div className="imgContainer card_box">
+            <Link to="/project1">
+              <img src={portrait} alt="website screenshot" />
+            </Link>
+            <span></span>
+          </div>
           <NavigationButton to="/project1"></NavigationButton>
         </div>
         {/* Project 2 */}
@@ -51,7 +59,12 @@ const ProjectSummaries = () => {
             locations locally. Additionally, the site includes a map of the
             local area.
           </p>
-          <img src={example} alt="website screenshot" />
+          <div className="imgContainer card_box">
+            <Link to="/project2">
+              <img src={example} alt="website screenshot" />
+              <span></span>
+            </Link>
+          </div>
           <NavigationButton to="/project2"></NavigationButton>
         </div>
       </div>
@@ -72,7 +85,12 @@ const ProjectSummaries = () => {
             on my css. I am hoping that this will work he how
             alkfhjda;lkfhadkl;fhad;flkasdfsaruihyweproieha
           </p>
-          <img src={example} alt="website screenshot" />
+          <div className="imgContainer card_box">
+            <Link to="/project3">
+              <img src={weather} alt="website screenshot" />
+              <span></span>
+            </Link>
+          </div>
           <NavigationButton to="/project4"></NavigationButton>
         </div>
       </div>
@@ -91,12 +109,17 @@ const ProjectSummaries = () => {
             </ol>
           </div>
           <p className="summary"></p>
-          <img src={example} alt="website screenshot" />
+          <div className="imgContainer card_box">
+            <Link to="/project4">
+              <img src={dictionary} alt="website screenshot" />
+              <span></span>
+            </Link>
+          </div>
           <NavigationButton to="/project3"></NavigationButton>
         </div>
       </div>
       {/* Project 5 */}
-      <div className="projectSummaries">
+      {/* <div className="projectSummaries">
         <div className="project">
           <h3>Frontend</h3>
           <h2>Mini Projects Fun Page</h2>
@@ -110,34 +133,41 @@ const ProjectSummaries = () => {
             </ol>
           </div>
           <p className="summary"></p>
-          <img src={example} alt="website screenshot" />
+          <div className="imgContainer card_box">
+          <Link to="/project5"
+            <img src={example} alt="website screenshot" />
+            <span></span>
+            </Link>
+          </div>
           <NavigationButton to="/project5"></NavigationButton>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
 export default ProjectSummaries;
 
 /* template for each project
-<div className="projectSummaries">
+  <div className="projectSummaries">
         <div className="project">
-          <h3>stack</h3>
-          <h2>title</h2>
+          <h3>frontend</h3>
+          <h2>Title</h2>
           <div className="stackList techskills">
             <ol>
               <li>React</li>
-              <li>Express</li>
               <li>CSS</li>
               <li>html</li>
-              <li>MongoDB</li>
             </ol>
           </div>
           <p className="summary">
             
           </p>
-          <img src={example} alt="website screenshot" />
+          <div className="imgContainer card_box">
+            <Link to="/project1">
+              <img src={portrait} alt="website screenshot" />
+            </Link>
+            <span></span>
+          </div>
           <NavigationButton to="/project1"></NavigationButton>
         </div>
-      </div>
       */

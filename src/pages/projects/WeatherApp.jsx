@@ -13,7 +13,7 @@ const WeatherApp = () => {
       <div className="projectDetails">
         <div className="type">
           <strong>Type</strong>
-          Training Project
+          Coding Workshop
         </div>
         <div className="stack">
           <strong>Stack</strong>
@@ -25,6 +25,13 @@ const WeatherApp = () => {
         </div>
         <div className="code">
           <strong>Code</strong>
+          <a
+            href="https://github.com/VSeaman8/DandDGenerator"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Github Repository</span>
+          </a>
         </div>
         <div className="live">
           <strong>Live</strong>

@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: 400px 400px;
   grid-template-areas:
-    "h3 image"
+    "h3 ."
     "title image"
     "stackList image"
     "summary image"
@@ -54,11 +54,15 @@
   grid-area: summary;
 }
 
-.project img {
+.imgContainer {
   grid-area: image;
+}
+
+.project img {
   width: 400px;
+  height: 250px;
   border-radius: 20px;
-  margin-top: 35px;
+  object-fit: cover;
 }
 
 .project button {
@@ -131,3 +135,73 @@ button:hover::before {
   top: 60%;
   left: 10%;
 }
+
+.card_box {
+  max-width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  background: linear-gradient(
+    170deg,
+    rgba(58, 56, 56, 0.623) 0%,
+    rgb(31, 31, 31) 100%
+  );
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card_box:hover {
+  transform: scale(0.9);
+}
+
+/* .card_box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card_box span::before {
+  content: "Premium";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(
+    45deg,
+    #ff6547 0%,
+    #ffb144 51%,
+    #ff7053 100%
+  );
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.card_box span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+} */
