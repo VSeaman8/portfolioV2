@@ -13,7 +13,7 @@ const WeatherApp = () => {
       <div className="projectDetails">
         <div className="type">
           <strong className="projectDetailsText">Type</strong>
-          <span className="spanText">Digital Futures Training Challenge</span>
+          <span className="spanText">SheCodes Workshop</span>
         </div>
         <div className="stack">
           <strong className="projectDetailsText">Stack</strong>

@@ -108,11 +108,16 @@ const ProjectSummaries = () => {
               <li>React</li>
               <li>Express</li>
               <li>CSS</li>
-              <li>html</li>
-              <li>MongoDB</li>
+              <li>JavaScript</li>
             </ol>
           </div>
-          <p className="summary"></p>
+          <p className="summary">
+            This project, part of the SheCodes add-on workshop, involved
+            creating a simple dictionary using newly acquired React skills. The
+            main objective was to practice building a React application and
+            integrating third-party APIs to fetch and display dictionary
+            definitions.
+          </p>
           <div className="imgContainer card_box">
             <Link to="/project4">
               <img src={dictionary} alt="website screenshot" />

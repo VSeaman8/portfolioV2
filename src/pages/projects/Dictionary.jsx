@@ -10,11 +10,11 @@ const Dictionary = () => {
       </p>
       <div className="projectDetails">
         <div className="type">
-          <strong>Type</strong>
-          <span>Coding Workshop</span>
+          <strong className="projectDetailsText">Type</strong>
+          <span className="spanText">SheCodes Workshop</span>
         </div>
         <div className="stack">
-          <strong>Stack</strong>
+          <strong className="projectDetailsText">Stack</strong>
           <ol>
             <li>React</li>
             <li>JavaScript</li>
@@ -22,10 +22,10 @@ const Dictionary = () => {
           </ol>
         </div>
         <div className="code">
-          <strong>Code</strong>
-          <div>
+          <strong className="projectDetailsText">Code</strong>
+          <div className="code">
             <a
-              href="https://fascinating-salamander-18aa85.netlify.app/"
+              href="https://github.com/VSeaman8/dictionary-project-v1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,7 +34,7 @@ const Dictionary = () => {
           </div>
         </div>
         <div className="live">
-          <strong>Live</strong>
+          <strong className="projectDetailsText">Live</strong>
           <div>
             <a
               href="https://fascinating-salamander-18aa85.netlify.app/"
@@ -47,7 +47,13 @@ const Dictionary = () => {
         </div>
       </div>
       <div className="image-container">
-        <img src={dictionaryScreen} alt="website screenshot" />
+        <a
+          href="https://fascinating-salamander-18aa85.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={dictionaryScreen} alt="website screenshot" />
+        </a>
       </div>
       <div className="purposeContainer">
         <h3>Project Purpose and Goal</h3>
