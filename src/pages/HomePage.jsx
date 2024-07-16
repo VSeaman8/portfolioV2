@@ -30,6 +30,12 @@ const Homepage = () => {
           <h2>
             Let's have a <span>chat</span>
           </h2>
+          <div className="emailContainer">
+            <a href="mailto:vuseaman@gmail.com" className="emailIcon">
+              <FontAwesomeIcon icon={faEnvelope} className="IconStyle" />
+              <span className="emailText">vuseaman@gmail.com</span>
+            </a>
+          </div>
         </div>
       </div>
     </>
