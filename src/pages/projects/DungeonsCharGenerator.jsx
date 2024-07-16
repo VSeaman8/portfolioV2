@@ -14,7 +14,7 @@ const DungeonsCharGenerator = () => {
       <div className="projectDetails">
         <div className="type">
           <strong className="projectDetailsText">Type</strong>
-          <span>Training Project</span>
+          <span className="spanText">Training Project</span>
         </div>
         <div className="stack">
           <strong className="projectDetailsText">Stack</strong>
@@ -50,7 +50,13 @@ const DungeonsCharGenerator = () => {
         </div>
       </div>
       <div className="image-container">
-        <img src={dungeon} alt="website screenshot" />
+        <a
+          href="https://rainbow-dieffenbachia-2e009a.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={dungeon} alt="website screenshot" />
+        </a>
       </div>
       <div className="purposeContainer">
         <h3>Project Purpose and Goal</h3>

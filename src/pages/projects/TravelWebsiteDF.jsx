@@ -1,3 +1,6 @@
+import "./Projects.css";
+import travel from "../../assets/images/travelinfowebsite.png";
+
 const TravelWebsite = () => {
   return (
     <div className="projectContainer">
@@ -9,31 +12,56 @@ const TravelWebsite = () => {
         third party APIs. As this was a time restricted challenge not every
         feature was included.
       </p>
-      <div>
+      <div className="projectDetails">
         <div className="type">
-          <strong>Type</strong>
-          Training Project
+          <strong className="projectDetailsText">Type</strong>
+          <span className="spanText">Digital Futures Training Challenge</span>
         </div>
         <div className="stack">
-          <strong>Stack</strong>
+          <strong className="projectDetailsText">Stack</strong>
           <ol>
             <li>React</li>
             <li>JavaScript</li>
             <li>CSS</li>
             <li>Postman</li>
-            <li>Express</li>
             <li>Chai</li>
+            <li>Express</li>
           </ol>
         </div>
         <div className="code">
-          <strong>Code</strong>
+          <strong className="projectDetailsText">Code</strong>
+          <div className="code">
+            <a
+              href="https://github.com/VSeaman8/DandDGenerator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Github Repository</span>
+            </a>
+          </div>
         </div>
         <div className="live">
-          <strong>Live</strong>
-          <link rel="stylesheet" href="" />
+          <strong className="projectDetailsText">Live</strong>
+          <div>
+            <a
+              href="https://celebrated-kataifi-d85eef.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Website </span>
+            </a>
+          </div>
         </div>
       </div>
-      <img src="" alt="screenshot of website" />
+      <div className="image-container">
+        <a
+          href="https://celebrated-kataifi-d85eef.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={travel} alt="website screenshot" />
+        </a>
+      </div>
       <div className="purposeContainer">
         <h3>Project Purpose and Goal</h3>
         <p>
@@ -105,11 +133,49 @@ const TravelWebsite = () => {
       </div>
       <div className="lessonLearnt">
         <h3>Lessons Learned</h3>
-        <p>My lessons are explained here</p>
+        <p>
+          I am very proud of my first full stack website. However I am aware
+          that there are several aspects to the website that needs to be worked
+          on to improve the functionality of the user experience and a couple of
+          bugs that have creeped into the website. Being able to apply the
+          knowledge that I have learnt from the academy has shown me how far I
+          have come in learning how to code. The biggest takeaway from the
+          challenge has been that I need to put more effort into planning and
+          preparation. From a practical sense of what I can do to improve the
+          website now that I am not under timed conditions I have created a list
+          to work through and is in my further work needed list below.{" "}
+        </p>
       </div>
       <div className="furtherWork">
         <h3>Futher Work</h3>
-        <p>Further work explained and conclusion if needed</p>
+        <p>
+          Now that I have completed the Digital Futures Academy, I will work on
+          the website at my leisure, making improvements.
+          <ol>
+            <li className="plainLi">
+              <strong className="strongText">Update</strong>: When a user
+              registers, a pop-up needs to appear confirming their
+              registration—currently, no alert appears.
+            </li>
+            <li className="plainLi">
+              <strong className="strongText">Update</strong>: When a user logs
+              in, a pop-up needs to appear confirming they are logged
+              in—currently, no alert appears.{" "}
+            </li>
+            <li className="plainLi">
+              <strong className="strongText">Bug</strong>: Users are
+              unexpectedly logged out after a period of time—investigate and
+              research better ways of handling user sessions.
+            </li>
+            <li className="plainLi">
+              <strong className="strongText">Update</strong>: Find a new API for
+              the hotels and implement the corresponding code.
+            </li>
+          </ol>
+          These changes will help improve the overall functionality and user
+          experience of the website, and they will also serve as an opportunity
+          for me to practice and refine my planning and development skills.
+        </p>
       </div>
     </div>
   );

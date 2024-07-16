@@ -45,6 +45,21 @@
   font-size: 30px;
 }
 
+.spanText {
+  color: #008b7a;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.strongText {
+  color: #008b7a;
+}
+
 ol {
   display: flex;
   flex-wrap: wrap;
@@ -67,11 +82,6 @@ li {
   justify-content: center;
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
-}
-
 a {
   text-decoration: none;
   color: #008b7a;
@@ -79,8 +89,16 @@ a {
   font-size: 20px;
 }
 
-.spantext {
-  color: #008b7a;
-  font-weight: 500;
-  font-size: 20px;
+a:hover {
+  color: #121e27;
+}
+
+ol li.plainLi {
+  list-style-type: decimal !important; /* Changed from disc to decimal */
+  color: #121e27 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: auto !important;
+  line-height: normal !important;
 }
