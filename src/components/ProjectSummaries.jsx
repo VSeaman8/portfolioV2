@@ -6,7 +6,7 @@ import dictionary from "../assets/images/dictionaryv1.png";
 import dungeon from "../assets/images/dndgenerator.png";
 import example from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
 import travel from "../assets/images/travelinfowebsite.png";
-import weather from "../assets/images/weathersearchreact.png";
+import weather from "../assets/images/weatherengine.png";
 
 const ProjectSummaries = () => {
   return (
@@ -90,12 +90,12 @@ const ProjectSummaries = () => {
             React, API integration, and user interface design.
           </p>
           <div className="imgContainer card_box">
-            <Link to="/project3">
+            <Link to="/project4">
               <img src={weather} alt="website screenshot" />
               <span></span>
             </Link>
           </div>
-          <NavigationButton to="/project4"></NavigationButton>
+          <NavigationButton to="/project3"></NavigationButton>
         </div>
       </div>
       {/* Project 4 */}

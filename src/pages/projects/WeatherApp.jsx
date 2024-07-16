@@ -1,6 +1,6 @@
 import "./Projects.css";
 
-import WeatherAppScreen from "../../assets/images/weathersearchreact.png";
+import WeatherAppScreen from "../../assets/images/weatherengine.png";
 
 const WeatherApp = () => {
   return (
