@@ -82,9 +82,12 @@ const ProjectSummaries = () => {
             </ol>
           </div>
           <p className="summary">
-            Summary here. this is a longer format to check the fraction setting
-            on my css. I am hoping that this will work he how
-            alkfhjda;lkfhadkl;fhad;flkasdfsaruihyweproieha
+            For my first React project, I developed a weather search engine
+            using a third-party API to fetch and display real-time weather
+            information. Users can enter a city name to retrieve current weather
+            conditions, including temperature and humidity, with dynamic updates
+            based on their input. This project enhanced my understanding of
+            React, API integration, and user interface design.
           </p>
           <div className="imgContainer card_box">
             <Link to="/project3">

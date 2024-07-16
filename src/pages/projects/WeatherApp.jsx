@@ -12,11 +12,11 @@ const WeatherApp = () => {
       </p>
       <div className="projectDetails">
         <div className="type">
-          <strong>Type</strong>
-          Coding Workshop
+          <strong className="projectDetailsText">Type</strong>
+          <span className="spanText">Digital Futures Training Challenge</span>
         </div>
         <div className="stack">
-          <strong>Stack</strong>
+          <strong className="projectDetailsText">Stack</strong>
           <ol>
             <li>React</li>
             <li>JavaScript</li>
@@ -24,22 +24,39 @@ const WeatherApp = () => {
           </ol>
         </div>
         <div className="code">
-          <strong>Code</strong>
-          <a
-            href="https://github.com/VSeaman8/DandDGenerator"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>Github Repository</span>
-          </a>
+          <strong className="projectDetailsText">Code</strong>
+          <div className="code">
+            <a
+              href="https://github.com/VSeaman8/react-weather"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Github Repository</span>
+            </a>
+          </div>
         </div>
         <div className="live">
-          <strong>Live</strong>
-          <link rel="stylesheet" href="" />
+          <strong className="projectDetailsText">Live</strong>
+          <div>
+            <a
+              href="https://astonishing-hotteok-56eee1.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Website </span>
+            </a>
+          </div>
         </div>
       </div>
+
       <div className="image-container">
-        <img src={WeatherAppScreen} alt="website screenshot" />
+        <a
+          href="https://celebrated-kataifi-d85eef.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={WeatherAppScreen} alt="website screenshot" />
+        </a>
       </div>
       <div className="purposeContainer">
         <h3>Project Purpose and Goal</h3>
