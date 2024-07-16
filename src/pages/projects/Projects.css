@@ -41,6 +41,10 @@
   overflow: hidden;
 }
 
+.projectDetailsText {
+  font-size: 30px;
+}
+
 ol {
   display: flex;
   flex-wrap: wrap;
@@ -66,4 +70,17 @@ li {
 .image-container img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #008b7a;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.spantext {
+  color: #008b7a;
+  font-weight: 500;
+  font-size: 20px;
 }

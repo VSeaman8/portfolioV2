@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import NavigationButton from "../functions/NavigationButton.jsx";
 
 import "./ProjectSummaries.css";
-import example from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
-import portrait from "../assets/images/victoriaSeamanProfile.jpg";
-import weather from "../assets/images/weathersearchreact.png";
 import dictionary from "../assets/images/dictionaryv1.png";
+import dungeon from "../assets/images/dndgenerator.png";
+import example from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
+import travel from "../assets/images/travelinfowebsite.png";
+import weather from "../assets/images/weathersearchreact.png";
 
 const ProjectSummaries = () => {
   return (
@@ -30,7 +31,7 @@ const ProjectSummaries = () => {
           </p>
           <div className="imgContainer card_box">
             <Link to="/project1">
-              <img src={portrait} alt="website screenshot" />
+              <img src={dungeon} alt="website screenshot" />
             </Link>
             <span></span>
           </div>
@@ -61,7 +62,7 @@ const ProjectSummaries = () => {
           </p>
           <div className="imgContainer card_box">
             <Link to="/project2">
-              <img src={example} alt="website screenshot" />
+              <img src={travel} alt="website screenshot" />
               <span></span>
             </Link>
           </div>

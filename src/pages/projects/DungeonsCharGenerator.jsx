@@ -1,3 +1,4 @@
+import dungeon from "../../assets/images/dndgenerator.png";
 import "./Projects.css";
 
 const DungeonsCharGenerator = () => {
@@ -12,11 +13,11 @@ const DungeonsCharGenerator = () => {
       </p>
       <div className="projectDetails">
         <div className="type">
-          <strong>Type</strong>
+          <strong className="projectDetailsText">Type</strong>
           <span>Training Project</span>
         </div>
         <div className="stack">
-          <strong>Stack</strong>
+          <strong className="projectDetailsText">Stack</strong>
           <ol>
             <li>React</li>
             <li>JavaScript</li>
@@ -24,7 +25,7 @@ const DungeonsCharGenerator = () => {
           </ol>
         </div>
         <div className="code">
-          <strong>Code</strong>
+          <strong className="projectDetailsText">Code</strong>
           <div className="code">
             <a
               href="https://github.com/VSeaman8/DandDGenerator"
@@ -36,11 +37,21 @@ const DungeonsCharGenerator = () => {
           </div>
         </div>
         <div className="live">
-          <strong>Live</strong>
-          <link rel="stylesheet" href="" />
+          <strong className="projectDetailsText">Live</strong>
+          <div>
+            <a
+              href="https://rainbow-dieffenbachia-2e009a.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Website</span>
+            </a>
+          </div>
         </div>
       </div>
-      <img src="" alt="screenshot of website" />
+      <div className="image-container">
+        <img src={dungeon} alt="website screenshot" />
+      </div>
       <div className="purposeContainer">
         <h3>Project Purpose and Goal</h3>
         <p>
