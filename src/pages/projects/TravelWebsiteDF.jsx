@@ -43,13 +43,14 @@ const TravelWebsite = () => {
         <div className="live">
           <strong className="projectDetailsText">Live</strong>
           <div>
-            <a
+            {/* <a
               href="https://celebrated-kataifi-d85eef.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span>Website </span>
-            </a>
+            </a> */}
+            <span>Website Not currently live</span>
           </div>
         </div>
       </div>
@@ -150,7 +151,8 @@ const TravelWebsite = () => {
         <h3>Futher Work</h3>
         <p>
           Now that I have completed the Digital Futures Academy, I will work on
-          the website at my leisure, making improvements.
+          the website at my leisure, making improvements. This includes ensuring
+          that the website is deployed correctly.
           <ol>
             <li className="plainLi">
               <strong className="strongText">Update</strong>: When a user
