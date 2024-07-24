@@ -1,15 +1,21 @@
+import RockPaperScissorsGamePage from "./mini-projects/RockPaperScissorsGamePage";
+
+import "./FunStuff.css";
+
 const FunStuff = () => {
   return (
     <div>
-      <h1>FUN STUFF</h1>
-      <h2>
-        This is my archive of older stuff that reflect how far i have come in my
-        journey to become a software engineer.
-      </h2>
-      <h3>
-        It's good to have a giggle kind of looking at pictures of when you were
-        young and you say to yourself "I can't believe i wore that!!"
-      </h3>
+      <div className="hero">
+        <h1>FUN STUFF</h1>
+
+        <h2>
+          {" "}
+          This page is all about the good times when creativity and fun collide.
+          It’s like looking at pictures of yourself when you were young and
+          saying, “I can’t believe I wore that!”
+        </h2>
+      </div>
+      <RockPaperScissorsGamePage />
     </div>
   );
 };

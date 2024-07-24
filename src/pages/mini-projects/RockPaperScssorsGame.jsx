@@ -1,15 +1,22 @@
 import { useState } from "react";
+import lizard from "../../assets/images/lizard.jpg";
+import paper from "../../assets/images/paper.jpg";
+import rock from "../../assets/images/rock.jpg";
+import scissors from "../../assets/images/scissors.jpg";
+import spock from "../../assets/images/spock.jpg";
 
 const RockPaperScissorsGame = () => {
   const options = [
-    { name: "rock", img: "../../assets/images/rock.jpg" },
-    { name: "paper", img: "path/to/paper/image" },
-    { name: "scissors", img: "path/to/scissors/image" },
-    { name: "lizard", img: "path/to/lizard/image" },
-    { name: "spock", img: "path/to/spock/image" },
+    { name: "Rock", img: rock },
+    { name: "Paper", img: paper },
+    { name: "Scissors", img: scissors },
+    { name: "Lizard", img: lizard },
+    { name: "Spock", img: spock },
   ];
 
   const [result, setResult] = useState("");
+  const [computerChoice, setComputerChoice] = useState("");
+  const [playerChoice, setPlayerChoice] = useState("");
 
   const getComputerChoice = () => {
     const randomChoice =
@@ -58,30 +65,32 @@ const RockPaperScissorsGame = () => {
 
   const playGame = (playerChoice) => {
     const computerChoice = getComputerChoice();
+    setComputerChoice(computerChoice);
+    setPlayerChoice(playerChoice);
     const gameResult = checkWin(playerChoice, computerChoice);
     setResult(gameResult);
   };
 
   return (
-    <div>
-      <h2>Rock, Paper, Lizard, Spock!</h2>
-      <div>
+    <div className="rockPaperGame">
+      <div className="gameContainer">
         {options.map((option) => (
           <button
             key={option.name}
             onClick={() => playGame(option.name)}
-            style={{ border: "none", background: "none" }}
+            className="gameButton"
           >
-            <img
-              src={option.img}
-              alt={option.name}
-              style={{ width: "100px", height: "100px" }}
-            />
+            <img src={option.img} alt={option.name} className="gameImage" />
           </button>
         ))}
       </div>
-      {result && <p>{result}</p>}
-      <button onClick={() => setResult("")}>Play Again</button>
+      {result && (
+        <div className="resultContainer">
+          <p>{result}</p>
+          <p>You Chose: {playerChoice}</p>
+          <p>Computer Chose: {computerChoice}</p>
+        </div>
+      )}
     </div>
   );
 };

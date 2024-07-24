@@ -1,0 +1,37 @@
+.rockPaperGame {
+  margin: 50px;
+}
+
+.gameContainer {
+  text-align: center;
+  position: relative;
+}
+
+.gameButton {
+  margin: 10px;
+  border: none;
+  background: none;
+}
+
+.gameImage {
+  width: 100px;
+  height: 100px;
+}
+
+.resultContainer {
+  background-color: rgba(26, 56, 56);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 20px;
+  font-weight: 500px;
+}

@@ -110,7 +110,7 @@ const About = () => {
           </p>
           <p>
             I’m always up for discussing books and
-            <strong>your go-to for any book recommendation</strong>—it used to
+            <strong> your go-to for any book recommendation</strong>—it used to
             be one of my favorite activities when I worked at the library.
             Connecting over literature is a great way for me to unwind and
             engage with colleagues beyond work.

@@ -31,16 +31,16 @@ const Navbar = () => {
                   About Me
                 </Link>
               </li>
-              {/* <li class="nav-item">
+              <li class="nav-item">
                 <Link className="nav-link" to="/funstuff">
                   Fun Stuff
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link className="nav-link" to="/archive">
-                  Archive
-                </Link>
-              </li> */}
+              {/* // <li class="nav-item">
+              //   <Link className="nav-link" to="/archive">
+              //     Archive
+              //   </Link>
+              // </li> */}
             </ul>
           </div>
         </div>
