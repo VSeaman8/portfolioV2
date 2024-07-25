@@ -86,12 +86,16 @@ const WordleGame = () => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
+    resetGame();
+  }, []);
+
+  const resetGame = () => {
     const word = wordList[Math.floor(Math.random() * wordList.length)];
     setSecretWord(word);
     setHint(Array(word.length).fill("_"));
-  }, []);
-
-  console.log("Welcome to the Word Guessing Game");
+    setGuess("");
+    setMessage("");
+  };
 
   const handleGuessChange = (e) => {
     setGuess(e.target.value.toLowerCase());
@@ -104,7 +108,7 @@ const WordleGame = () => {
     }
 
     const newHint = [...hint];
-    for (let i = 0; i < secretWord.length(); i++) {
+    for (let i = 0; i < secretWord.length; i++) {
       if (secretWord[i] === guess[i]) {
         newHint[i] = guess[i];
       }
@@ -118,22 +122,24 @@ const WordleGame = () => {
     } else {
       setMessage("Keep Guessing");
     }
-
-    return (
-      <div>
-        <h2>Welcome to the Word Guessing Game</h2>
-        <p>Your hint is: {hint.join(" ")}</p>
-        <input
-          type="text"
-          value={guess}
-          onChange={handleGuessChange}
-          maxLength={secretWord.length}
-        />
-        <button onclick={handleGuessSubmit}>Submit Guess</button>
-        <p>{message}</p>
-      </div>
-    );
   };
+
+  return (
+    <div className="gameContainer">
+      <p className="resultContainer">Your hint is: {hint.join(" ")}</p>
+      <input
+        type="text"
+        value={guess}
+        onChange={handleGuessChange}
+        maxLength={secretWord.length}
+      />
+      <button onClick={handleGuessSubmit} className="wordleBtn">
+        Submit Guess
+      </button>
+      <button onClick={resetGame}>Reset Game</button>
+      <p>{message}</p>
+    </div>
+  );
 };
 
 export default WordleGame;

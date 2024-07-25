@@ -2,7 +2,7 @@ import RockPaperScissorsGame from "./RockPaperScssorsGame.jsx";
 
 const RockPaperScissorsGamePage = () => {
   return (
-    <div className="rockPaperGame">
+    <div className="mainGameContainer">
       <h2>Rock, Paper, Lizard, Spock</h2>
       <h3>This is a little twist on the rock, Paper, Scissors game.</h3>
       <p>

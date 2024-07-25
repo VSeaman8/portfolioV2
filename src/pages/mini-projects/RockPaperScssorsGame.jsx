@@ -21,7 +21,7 @@ const RockPaperScissorsGame = () => {
   const getComputerChoice = () => {
     const randomChoice =
       options[Math.floor(Math.random() * options.length)].name;
-    return randomChoice;
+    return randomChoice.toLowerCase(); // Ensure lowercase
   };
 
   const checkWin = (player, computer) => {
@@ -54,9 +54,9 @@ const RockPaperScissorsGame = () => {
       return "It's a Tie!";
     }
 
-    const result = winMap[player].winsAgainst.includes(computer)
+    const result = winMap[player]?.winsAgainst.includes(computer)
       ? "You win!"
-      : winMap[player].losesTo.includes(computer)
+      : winMap[player]?.losesTo.includes(computer)
       ? "You lose!"
       : "Invalid choice";
 
@@ -66,8 +66,8 @@ const RockPaperScissorsGame = () => {
   const playGame = (playerChoice) => {
     const computerChoice = getComputerChoice();
     setComputerChoice(computerChoice);
-    setPlayerChoice(playerChoice);
-    const gameResult = checkWin(playerChoice, computerChoice);
+    setPlayerChoice(playerChoice.toLowerCase()); // Ensure lowercase
+    const gameResult = checkWin(playerChoice.toLowerCase(), computerChoice);
     setResult(gameResult);
   };
 

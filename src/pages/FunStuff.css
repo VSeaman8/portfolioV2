@@ -1,4 +1,4 @@
-.rockPaperGame {
+.mainGameContainer {
   margin: 50px;
 }
 
@@ -34,4 +34,8 @@
   color: white;
   font-size: 20px;
   font-weight: 500px;
+}
+
+.wordleBtn {
+  margin: 30px;
 }
