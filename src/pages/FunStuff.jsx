@@ -1,4 +1,5 @@
 import RockPaperScissorsGamePage from "./mini-projects/RockPaperScissorsGamePage";
+import WordleGamePage from "./mini-projects/WordleGamePage.jsx";
 
 import "./FunStuff.css";
 
@@ -16,6 +17,7 @@ const FunStuff = () => {
         </h2>
       </div>
       <RockPaperScissorsGamePage />
+      <WordleGamePage />
     </div>
   );
 };
