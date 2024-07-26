@@ -106,7 +106,7 @@ footer ol {
 
 @media (max-width: 960px) {
   .navBarContainer {
-    background-color: #121e27;
+    background-color: #ffffff;
     width: 100%;
     color: #ffffff;
   }
@@ -121,6 +121,22 @@ footer ol {
 }
 
 @media (max-width: 768px) {
+  .navBarContainer {
+    background-color: #ffffff;
+    width: 100%;
+    color: #121e27;
+  }
+  .navbar-brand {
+    white-space: nowrap;
+    columns: #121e27;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+  .collapse.navbar-collapse {
+    color: #ffffff;
+  }
 }
 
 @media (max-width: 480px) {

@@ -71,3 +71,92 @@
 .biotitle {
   margin-bottom: 30px;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 768px) {
+  .mySkillsContainer {
+    grid-template-areas:
+      "title"
+      "profile"
+      "skills"
+      "bio";
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .profile {
+    max-width: 400px;
+    padding: 0 20px;
+    border-radius: 40px;
+  }
+
+  .techskills,
+  .techskills ol {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+  }
+
+  .techskills li {
+    width: 150px;
+    padding: 10px;
+  }
+  .bio {
+    width: 80%;
+    font-size: 24px;
+  }
+
+  .biolink a {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .bioTitle {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  @media (max-width: 480px) {
+    .mySkillsContainer {
+      grid-template-areas:
+        "title"
+        "profile"
+        "skills"
+        "bio";
+      grid-template-columns: 1fr;
+      padding: 15px;
+    }
+
+    .profile {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+
+    .techskills,
+    .techskills ol {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .techskills li {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .bioLink a {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    .bioTitle {
+      margin-bottom: 20px;
+    }
+  }
+}

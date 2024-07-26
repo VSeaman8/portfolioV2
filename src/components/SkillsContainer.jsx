@@ -10,16 +10,12 @@ const SkillsContainer = () => {
       <h2 className="skillsTitle titleh2">
         My <span>Skills</span>
       </h2>
-      <img
-        src={profilePic}
-        alt="my picture"
-        className="profile"
-        style={{ borderRadius: "30px" }}
-      />
+      <img src={profilePic} alt="my picture" className="profile" />
       <div className="techskills">
         <ol>
           <li>React</li>
           <li>JavaScript</li>
+          <li>Java</li>
           <li>Express</li>
           <li>HTML 5</li>
           <li>Mocha</li>
