@@ -99,3 +99,64 @@ footer a {
 footer ol {
   margin-top: 20px;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 960px) {
+  .navBarContainer {
+    background-color: #121e27;
+    width: 100%;
+    color: #ffffff;
+  }
+  .navbar-brand {
+    margin-left: 30px;
+    white-space: nowrap;
+    color: #ffffff !important;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .navBarContainer {
+    background-color: #ffffff;
+    width: 100%;
+    color: #121e27;
+  }
+  .navbar-brand {
+    white-space: nowrap;
+    columns: #121e27;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+  .collapse.navbar-collapse {
+    color: #ffffff;
+  }
+}
+
+/* Media Queries for Responsiveness
+@media (max-width: 1200px) {
+
+ 
+}
+
+@media (max-width: 960px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+  }
+
+
+@media (max-width: 480px) {
+  
+} */

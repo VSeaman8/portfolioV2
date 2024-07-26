@@ -70,3 +70,19 @@
   align-items: center;
   gap: 50px;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 10px;
+  }
+}

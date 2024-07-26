@@ -88,3 +88,78 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 960px) {
+  h2 {
+    font-size: 35px;
+  }
+
+  .emailIcon {
+    font-size: 80px;
+  }
+
+  .emailText {
+    font-size: 40px;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .emailIcon {
+    font-size: 60px;
+  }
+
+  .emailText {
+    font-size: 30px;
+  }
+
+  .titleh2 {
+    padding-left: 20px;
+  }
+
+  .titleh2 span::before {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  .emailIcon {
+    font-size: 50px;
+  }
+
+  .emailText {
+    font-size: 25px;
+  }
+
+  .titleh2 {
+    padding-left: 10px;
+  }
+
+  .titleh2 span::before {
+    width: 100%;
+    left: 0;
+  }
+  .container {
+    max-width: 100vw;
+  }
+}
