@@ -189,6 +189,9 @@ button:hover::before {
 }
 
 @media (max-width: 480px) {
+  .projectContainer {
+    padding: 0;
+  }
   .project {
     grid-template-areas:
       "h3"
@@ -198,16 +201,9 @@ button:hover::before {
       "summary"
       "button";
     grid-template-columns: 1fr;
-    padding: 15px;
   }
 
-  .projectImage {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .projectDescription,
-  .projectDetails {
-    padding: 0 20px;
+  .projectSummaries {
+    padding: 0;
   }
 }

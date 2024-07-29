@@ -164,6 +164,10 @@
       padding: 10px;
     }
 
+    .bio {
+      width: 100%;
+    }
+
     .bioLink a {
       font-size: 18px;
       letter-spacing: 2px;

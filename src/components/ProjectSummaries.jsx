@@ -4,7 +4,6 @@ import NavigationButton from "../functions/NavigationButton.jsx";
 import "./ProjectSummaries.css";
 import dictionary from "../assets/images/dictionaryv1.png";
 import dungeon from "../assets/images/dndgenerator.png";
-import example from "../assets/images/jigar-panchal-8BAyCFRCHqY-unsplash.jpg";
 import travel from "../assets/images/travelinfowebsite.png";
 import weather from "../assets/images/weatherengine.png";
 
