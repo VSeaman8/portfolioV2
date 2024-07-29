@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <footer className="footerContainer">
-      <p className="name">Victoria Seaman</p>
+      <p className="name">Vicki Seaman</p>
       <div className="socials">
         <a
           href="https://github.com/VSeaman8"

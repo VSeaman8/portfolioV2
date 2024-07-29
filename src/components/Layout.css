@@ -2,7 +2,7 @@
 
 .navBarContainer {
   background-color: #121e27;
-  width: 100vw;
+  width: 100%;
 }
 
 /* changes colour of navbar text */
@@ -110,9 +110,9 @@ footer ol {
 
 @media (max-width: 960px) {
   .navBarContainer {
-    background-color: #ffffff;
+    background-color: #121e27;
     width: 100%;
-    color: #ffffff;
+    color: white;
   }
   .navbar-brand {
     margin-left: 30px;
@@ -121,6 +121,7 @@ footer ol {
   }
   .navbar-toggler {
     border: none;
+    color: #ffffff;
   }
 }
 
@@ -134,19 +135,17 @@ footer ol {
 
   /* Navbar CSS */
   .navBarContainer {
-    background-color: #ffffff;
     width: 100%;
-    color: #121e27;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
   }
   .navbar-brand {
     white-space: nowrap;
-    color: #121e27;
   }
   .navbar-toggler {
     border: none;
+    color: #ffffff !important;
   }
 
   .collapse.navbar-collapse {
