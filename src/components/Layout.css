@@ -125,14 +125,25 @@ footer ol {
 }
 
 @media (max-width: 768px) {
+  .background {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Navbar CSS */
   .navBarContainer {
     background-color: #ffffff;
     width: 100%;
     color: #121e27;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   .navbar-brand {
     white-space: nowrap;
-    columns: #121e27;
+    color: #121e27;
   }
   .navbar-toggler {
     border: none;
@@ -140,6 +151,33 @@ footer ol {
 
   .collapse.navbar-collapse {
     color: #ffffff;
+  }
+
+  /* Footer CSS */
+
+  .footerContainer {
+    text-align: center;
+    width: 100%;
+  }
+
+  .name {
+    padding: 0;
+  }
+  .linksList {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .linksList li {
+    width: 100%;
+    padding: 5px 0;
+    align-items: center;
+  }
+
+  .linksList ol {
+    padding: 0;
+    margin: 0;
   }
 }
 

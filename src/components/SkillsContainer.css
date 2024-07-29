@@ -80,6 +80,9 @@
 }
 
 @media (max-width: 768px) {
+  .titleh2 {
+    font-size: 48px;
+  }
   .mySkillsContainer {
     grid-template-areas:
       "title"
@@ -88,93 +91,98 @@
       "bio";
     grid-template-columns: 1fr;
     padding: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile {
-    max-width: 400px;
+    max-width: 100%;
     padding: 0 20px;
     border-radius: 40px;
+  }
+  .techskills {
+    flex-direction: column;
+    align-items: center;
   }
 
   .techskills,
   .techskills ol {
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     gap: 10px;
-    width: 80%;
-    justify-content: center;
+    width: 100%;
+    padding: 10px;
   }
 
   .techskills li {
-    margin: 5px; /* Adjust margin for better spacing */
-    padding: 10px 20px; /* Maintain padding */
     width: auto;
-  }
-  .bio {
-    width: 80%;
-    font-size: 24px;
+    padding: 10px;
   }
 
-  .biolink a {
-    font-size: 36px;
+  .bio {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .bioLink a {
+    font-size: 18px;
     letter-spacing: 2px;
   }
 
   .bioTitle {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleh2 {
     font-size: 36px;
   }
+  .mySkillsContainer {
+    grid-template-areas:
+      "title"
+      "profile"
+      "skills"
+      "bio";
+    grid-template-columns: 1fr;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  @media (max-width: 480px) {
-    .titleh2 {
-      font-size: 36px;
-    }
-    .mySkillsContainer {
-      grid-template-areas:
-        "title"
-        "profile"
-        "skills"
-        "bio";
-      grid-template-columns: 1fr;
-      padding: 15px;
-      flex-direction: column;
-      align-items: center;
-    }
+  .profile {
+    max-width: 100%;
+    padding: 0 20px;
+    border-radius: 40px;
+  }
+  .techskills {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
 
-    .profile {
-      max-width: 100%;
-      padding: 0 20px;
-      border-radius: 40px;
-    }
-    .techskills {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: center;
-    }
+  .techskills,
+  .techskills ol {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
 
-    .techskills,
-    .techskills ol {
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-    }
+  .techskills li {
+    width: auto;
+    padding: 10px;
+  }
 
-    .techskills li {
-      width: auto;
-      padding: 10px;
-    }
+  .bio {
+    width: 100%;
+  }
 
-    .bio {
-      width: 100%;
-    }
+  .bioLink a {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
 
-    .bioLink a {
-      font-size: 18px;
-      letter-spacing: 2px;
-    }
-
-    .bioTitle {
-      margin-bottom: 20px;
-    }
+  .bioTitle {
+    margin-bottom: 20px;
   }
 }
