@@ -32,11 +32,11 @@ const Footer = () => {
 
           {/* <li>
             <Link to="/archive">Archive</Link>
-          </li>
+          </li> */}
 
           <li>
             <Link to="/funstuff">Fun Stuff</Link>
-          </li> */}
+          </li>
         </ol>
       </div>
     </footer>

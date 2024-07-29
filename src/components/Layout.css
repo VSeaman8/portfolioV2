@@ -21,11 +21,9 @@
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "name social link"
-    ". photo .";
+  grid-template-areas: "name social link";
   gap: 10px;
-  width: 100vw;
+  width: 100%;
 }
 
 .name {
@@ -50,6 +48,8 @@
 
 .linkslist {
   grid-area: link;
+  display: flex;
+  flex-direction: column;
 }
 
 .photoCredit {
@@ -95,9 +95,13 @@ footer a {
   margin-top: 20px;
   /* opacity: 0.7; */
 }
+footer a:visited {
+  color: white;
+}
 
 footer ol {
   margin-top: 20px;
+  display: block;
 }
 
 /* Media Queries for Responsiveness */
@@ -140,6 +144,14 @@ footer ol {
 }
 
 @media (max-width: 480px) {
+  .background {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Navbar CSS */
   .navBarContainer {
     background-color: #ffffff;
     width: 100%;
@@ -160,11 +172,35 @@ footer ol {
     color: #ffffff;
   }
 
-  .background {
+  /* Footer CSS */
+
+  .footerContainer {
+    text-align: center;
     width: 100%;
-    margin: 0;
+  }
+
+  .name {
     padding: 0;
-    overflow-x: hidden;
+  }
+  .linksList {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .linksList li {
+    width: 100%;
+    padding: 5px 0;
+    align-items: center;
+  }
+
+  .linksList ol {
+    padding: 0;
+    margin: 0;
+  }
+
+  .socials {
+    gap: 20px;
   }
 }
 
