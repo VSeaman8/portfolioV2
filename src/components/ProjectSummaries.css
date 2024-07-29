@@ -163,24 +163,25 @@ button:hover::before {
 }
 
 @media (max-width: 768px) {
-  .projectContainer {
+  .project {
     grid-template-areas:
+      "h3"
       "title"
       "image"
-      "description"
-      "details";
+      "stackList"
+      "summary"
+      "button";
     grid-template-columns: 1fr;
     padding: 15px;
   }
+
   .projectSummaries {
     display: flex;
     justify-content: center;
     max-width: 768px;
     margin: auto;
   }
-  .project {
-    grid-template-columns: 1fr;
-  }
+
   .projectImage {
     max-width: 100%;
     padding: 0 20px;
@@ -188,12 +189,14 @@ button:hover::before {
 }
 
 @media (max-width: 480px) {
-  .projectContainer {
+  .project {
     grid-template-areas:
+      "h3"
       "title"
       "image"
-      "description"
-      "details";
+      "stackList"
+      "summary"
+      "button";
     grid-template-columns: 1fr;
     padding: 15px;
   }
@@ -206,9 +209,5 @@ button:hover::before {
   .projectDescription,
   .projectDetails {
     padding: 0 20px;
-  }
-
-  .project {
-    grid-template-columns: 1fr;
   }
 }
