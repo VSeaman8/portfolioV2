@@ -144,10 +144,13 @@ footer ol {
     background-color: #ffffff;
     width: 100%;
     color: #121e27;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   .navbar-brand {
     white-space: nowrap;
-    columns: #121e27;
+    color: #121e27;
   }
   .navbar-toggler {
     border: none;
@@ -155,6 +158,13 @@ footer ol {
 
   .collapse.navbar-collapse {
     color: #ffffff;
+  }
+
+  .background {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 }
 
