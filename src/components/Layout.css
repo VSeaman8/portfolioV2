@@ -105,8 +105,6 @@ footer ol {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-}
 
 @media (max-width: 960px) {
   .navBarContainer {
