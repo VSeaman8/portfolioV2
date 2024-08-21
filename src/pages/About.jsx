@@ -4,7 +4,13 @@ const About = () => {
     <>
       <div className="aboutContainer">
         <h2>I have always loved knowledge</h2>
-        <div className="cvDiv"> Looking for my CV?</div>
+        <div className="cvDiv">
+          {" "}
+          Looking for my{" "}
+          <a href="https://drive.google.com/file/d/1lXsSC52pE6E-spFzblGev8ipJdZRqma-/view?usp=sharing">
+            CV?
+          </a>
+        </div>
         <div>
           <h3>My quick story</h3>
           <p>
